@@ -1,35 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// import Auth from '../../utils/auth';
-
-const styles = {
-  header: {
-    minHeight: '150px',
-    backgroundColor: "#282c34",
-    textAlign: 'center',
-  },
-//   h1: {
-//     backgroundColor: "#282c34",
-//     margin: "0",
-//   }
-};
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light navAdjust">
-        <a className="navbar-brand" href="/">Navbar</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
+        <Link className="navbar-brand" to="/">Navbar</Link>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="w-100 navbar-nav d-flex justify-content-end">
-            <a className="nav-item nav-link active" href="#">Home</a>
-            <a className="nav-item nav-link" href="#">About Me</a>
-            <a className="nav-item nav-link" href="#">Pricing</a>
+              <Link className="nav-item nav-link active" to="/">Home</Link>
+              <Link className="nav-item nav-link" to="/About">About Me</Link>
+              <Link className="nav-item nav-link" to="/Services">Services</Link>
+              <Link className="nav-item nav-link" to="/Contact">Contact</Link>
             </div>
         </div>
-        </nav>
+
+        <Dropdown className="navbar-toggler p-0">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-secondary text-dark">
+          <span className="navbar-toggler-icon d-flex justify-content-center"></span>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Link to="/" className="d-flex justify-content-center nav-item nav-link py-1">Home</Link>
+            <Link to="/About" className="d-flex justify-content-center nav-item nav-link py-1">About</Link>
+            <Link to="/Services" className="d-flex justify-content-center nav-item nav-link py-1">Services</Link>
+            <Link to="/Contact" className="d-flex justify-content-center nav-item nav-link py-1">Contact</Link>
+            {/* <Dropdown.Item href="/" className="d-flex justify-content-center">
+              <Link to="/" className="nav-item nav-link ">Home</Link></Dropdown.Item>
+            <Dropdown.Item href="/About" className="d-flex justify-content-center">
+              <Link to="/About" className="nav-item nav-link">About Me</Link></Dropdown.Item>
+            <Dropdown.Item href="/Packages" className="d-flex justify-content-center">
+              <Link to="/Packages" className="nav-item nav-link">Packages</Link></Dropdown.Item> */}
+          </Dropdown.Menu>
+        </Dropdown>
+
+        {/* <Dropdown className="navbar-toggler p-0">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-secondary">
+            <p className="text-dark">
+              Test
+            </p>
+            <span className="navbar-toggler-icon d-flex justify-content-center"></span>
+          </Dropdown.Toggle>
+        </Dropdown> */}
+
+        
+      </nav>
+
   );
 };
 

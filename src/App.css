@@ -1,3 +1,5 @@
+
+
 ul {
   list-style-type: none;  
   margin: 0px;
@@ -8,7 +10,58 @@ ul {
   margin-right: 2%;
 }
 
+.endorsementBox {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+.endorsement {
+  /* box-shadow: 12px 12px 25px rgb(0, 0, 70); */
+  /* border: 1px solid rgb(58, 58, 190); */
+  width: 30vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 15px;
+
+}
+
+.quote-author {
+  
+  font-size: calc(1vh + 7px);
+}
+
+#dropdown-basic {
+  background-color: white;
+}
+
+#jumbotron {
+  background-image: url('./assets/images/dogJumboFlipped.jpg');
+  height: 500px;
+}
+
+#mask {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#mask2 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#mask2:hover {
+  color: rgb(142, 142, 216);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* transition: background-color 200ms linear; */
+  transition: color 400ms linear;
+}
+
+.dropdown-toggle::after {
+  border: 0px;
+  content: none;
+}
+
 .App {
+  /* background-color:#282c34; */
   text-align: center;
 }
 
