@@ -57,6 +57,20 @@ ul {
 
 }
 
+.wideEndorsement {
+  width: 100%;
+}
+
+.wideEndorsement img {
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  max-width:49vmin;
+  max-height:84vmin;
+  width: auto;
+  height: auto;
+}
+
 .endorser {
   font-weight: normal;
 }
@@ -92,8 +106,22 @@ ul {
   transition: color 400ms linear;
 }
 
+.jumboTextbox {
+  width: 45vw;
+  margin-left: 10%;
+  margin-right: 0%;
+}
+
+#jumboHeader {
+  padding-bottom: 5%;
+}
+
+#jumboSubheader {
+  font-size: 1.2em;
+}
+
 #jumboBtnBox {
- padding-left: 10%;
+ padding-left: 25%;
 }
 
 .dropdown-toggle::after {
@@ -101,10 +129,16 @@ ul {
   content: none;
 }
 
+.modalBtn {
+  margin: 4% 20% 0% 20%;
+  background-color: rgb(69, 69, 126);
+  border: none;
+}
+
 .App {
   /* background-color:#282c34; */
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .App-logo {
@@ -119,7 +153,7 @@ ul {
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -130,7 +164,7 @@ ul {
 }
 
 .nav-background {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   color: white;
 }
 
@@ -230,4 +264,31 @@ color:#333333;
 font-style: normal;
 font-weight: bold;
 margin-top:1em;
+}
+
+.quoteText {
+  font-size: calc(1em+1vmin);
+}
+
+.quoteAuthor {
+  font-size: .8em;
+
+}
+
+@media screen and (max-width: 650px) {
+  .quoteText {
+    font-size: calc(1em);
+  }
+  #jumboHeader {
+    font-size: calc(1em);
+  }
+  #jumboSubheader {
+    font-size: calc(1em);
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .quoteText {
+    font-size: calc(.8em);
+  }
 }

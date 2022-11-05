@@ -9,6 +9,7 @@ import Header from "./components/Header/index.js"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './custom.scss';
 
 function App() {
   return (

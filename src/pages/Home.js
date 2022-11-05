@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 // import Button from 'react-bootstrap/Button';
 // import Jumbotron from 'react-bootstrap/Jumbotron';
 import pitty from "../assets/images/pitty.jpg"
@@ -7,38 +9,44 @@ import whitedog from "../assets/images/whitedog.jpg"
 import beagle from "../assets/images/beagle.jpg"
 import hank from "../assets/images/hank.jpg"
 
+import ContactForm from "../components/ContactForm/index.js"
+
+
 const Home = () => {
+
+    const [show, setShow] = useState(false);
+  
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <div className="App">
             <header className="text-center bg-image" id="jumbotron">
                 <div className="mask w-100 h-100" id="mask">
                     <div className="d-flex justify-content-start align-items-center h-100">
-                        <div className="text-white w-75 container">
-                            <h1 className="mb-3 text-start ms-4 px-4 w-75 row">Transform the dog you have into the dog you want!</h1>
-                            <h4 className="mb-3 text-start ms-4 px-4 w-75 row"><span className="grayscale">✔</span>Perfect Obedience</h4>
-                            <h4 className="mb-3 text-start ms-4 px-4 w-75 row"><span className="grayscale">✔</span>No Jumping, Barking, Pulling</h4>
-                            <h4 className="mb-3 text-start ms-4 px-4 w-75 row"><span className="grayscale">✔</span>Guaranteed Results</h4>
+                        <div className="text-white container jumboTextbox">
+                            <h1 className="mb-3 text-start ms-4 px-4 row" id="jumboHeader">Transform the dog you have into the dog you want!</h1>
+                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader"><span className="grayscale">✔</span>Perfect Obedience</h4>
+                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader"><span className="grayscale">✔</span>No Jumping, Barking, Pulling</h4>
+                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader"><span className="grayscale">✔</span>Guaranteed Results</h4>
                             {/* <a className="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> */}
                             <div className="d-flex justify-content-start" id="jumboBtnBox">
                                 <Link to="/Contact" className="btn btn-outline-light btn-lg row mask" id="mask2">Free Consultation!</Link>
 
                             </div>
                         </div>
+                        <div className="contactBox w-100">
+                            <ContactForm />
+                        </div>
                     </div>
                 </div>
             </header>
             <section className="endorsementBox d-flex justify-content-center">
-                {/* <div className="endorsement shadow-lg text-body">
-                    <p>"SSBR is very blessed to have an amazing trainer who truly cares about each dog as an individual.
-                    Without Alessandro, several of our dogs wouldn’t have had a chance at their forever home. Highly 
-                    recommend!"</p>
-                    <p className="endorser">~Haley Kazee (Southern States Bully Rescue)</p>
-                </div> */}
-                <blockquote className="otro-blockquote">
+                <blockquote className="otro-blockquote quoteText">
                 "SSBR is very blessed to have an amazing trainer who truly cares about each dog as an individual.
                     Without Alessandro, several of our dogs wouldn’t have had a chance at their forever home. Highly 
                     recommend!"
-                <span>~Haley Kazee (Southern States Bully Rescue)</span>
+                <span className="quoteAuthor">~Haley Kazee (Southern States Bully Rescue)</span>
                 </blockquote>
             </section>
             <article className="container">
@@ -49,7 +57,7 @@ const Home = () => {
                         </div>
                         <div className="row">
                             <h3 className="programHeader">Puppy Program</h3>
-                            <p>Our Puppy Program is best suited for puppies under the age of 7
+                            <p>Our Puppy Program is best suited for puppies under the age of 6
                                 months focusing on preventing issues from coming up and teaching them basic obedience.</p>
                         </div>
                     </div>
@@ -75,7 +83,35 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className="wideEndorsement row">   
+                    <img src={hank} alt="two children and their dog(hank)" className="rounded-lg"/>
+                    <blockquote className="otro-blockquote quoteText">
+                    " . . . When we got hooked up with Alessandro he 
+                     took Hank in for a few weeks and he is now a totally different dog. we've stuck with his training
+                      and still call him for suggestions if we need him . . ."        
+                        <Button variant="primary" onClick={handleShow} className="modalBtn">
+                            Read More
+                        </Button> 
+                    <span className="quoteAuthor">-Jenn Nero, Seffner Florida</span>
+                    </blockquote>
+                    <Modal show={show} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                        <Modal.Title>Jenn Nero, Seffner Florida:</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>"When we got our rescue dog Hank, he was quite destructive. he did over $600 in damages to
+                     our house within the first week. he peed and pooped in the house every day and would run off 
+                     any chance hed get and even break out of his crate. when we got hooked up with Alessandro he 
+                     took Hank in for a few weeks and he is now a totally different dog. we've stuck with his training
+                      and still call him for suggestions if we need him. Hank has found his furever home because of
+                       Alessandro." </Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClose}>
+                            Close
+                        </Button>
+                        </Modal.Footer>
+                    </Modal>
+                </div>
+                
             </article>
         </div>
   );
