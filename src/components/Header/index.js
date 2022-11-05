@@ -8,10 +8,10 @@ const Header = () => {
         <Link className="navbar-brand" to="/">Navbar</Link>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="w-100 navbar-nav d-flex justify-content-end">
-              <Link className="nav-item nav-link active" to="/">Home</Link>
-              <Link className="nav-item nav-link" to="/About">About Me</Link>
-              <Link className="nav-item nav-link" to="/Services">Services</Link>
-              <Link className="nav-item nav-link" to="/Contact">Contact</Link>
+              <Link className="nav-item nav-link active hoverBlue" to="/">Home</Link>
+              <Link className="nav-item nav-link hoverBlue" to="/About">About Me</Link>
+              <Link className="nav-item nav-link hoverBlue" to="/Services">Services</Link>
+              <Link className="nav-item nav-link hoverBlue" to="/Contact">Contact</Link>
             </div>
         </div>
 
@@ -21,10 +21,10 @@ const Header = () => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Link to="/" className="d-flex justify-content-center nav-item nav-link py-1">Home</Link>
-            <Link to="/About" className="d-flex justify-content-center nav-item nav-link py-1">About</Link>
-            <Link to="/Services" className="d-flex justify-content-center nav-item nav-link py-1">Services</Link>
-            <Link to="/Contact" className="d-flex justify-content-center nav-item nav-link py-1">Contact</Link>
+            <Link to="/" className="d-flex justify-content-center nav-item nav-link py-1 hoverBlue">Home</Link>
+            <Link to="/About" className="d-flex justify-content-center nav-item nav-link py-1 hoverBlue">About</Link>
+            <Link to="/Services" className="d-flex justify-content-center nav-item nav-link py-1 hoverBlue">Services</Link>
+            <Link to="/Contact" className="d-flex justify-content-center nav-item nav-link py-1 hoverBlue">Contact</Link>
             {/* <Dropdown.Item href="/" className="d-flex justify-content-center">
               <Link to="/" className="nav-item nav-link ">Home</Link></Dropdown.Item>
             <Dropdown.Item href="/About" className="d-flex justify-content-center">
