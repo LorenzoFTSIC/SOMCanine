@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const FORM_ENDPOINT = "https://public.herotofu.com/v1/de9d2a20-5d42-11ed-b82c-5d75eaa7ccff"; // TODO - fill on the later step
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/de9d2a20-5d42-11ed-b82c-5d75eaa7ccff";
 
 
 const ContactForm = () => {
@@ -11,24 +11,18 @@ const ContactForm = () => {
   const handleSubmit = () => {
 
     setTimeout(() => {
-
       setSubmitted(true);
-
     }, 100);
-
   };
 
 
   if (submitted) {
-
     return (
-
       <>
         <h2>Thank you!</h2>
         <div>We'll be in touch soon.</div>
       </>
     );
-
   }
 
 
@@ -92,15 +86,11 @@ const ContactForm = () => {
                     Send
                 </button>
                 </div>
-
             </form>
             </div>
         </div>
     </div>
-
-
   );
-
 };
 
 

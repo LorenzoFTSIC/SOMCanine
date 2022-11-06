@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-// import Button from 'react-bootstrap/Button';
-// import Jumbotron from 'react-bootstrap/Jumbotron';
 import pitty from "../assets/images/pitty.jpg"
 import whitedog from "../assets/images/whitedog.jpg"
 import beagle from "../assets/images/beagle.jpg"
@@ -32,7 +30,6 @@ const Home = () => {
                             {/* <a className="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> */}
                             <div className="d-flex justify-content-start" id="jumboBtnBox">
                                 <Link to="/Contact" className="btn btn-outline-light btn-lg row mask" id="mask2">Free Consultation!</Link>
-
                             </div>
                         </div>
                         <div className="contactBox w-100">
@@ -110,6 +107,10 @@ const Home = () => {
                         </Button>
                         </Modal.Footer>
                     </Modal>
+                </div>
+                
+                <div className="d-flex justify-content-center consultBtn">
+                    <Link to="/Contact" className="btn btn-outline-light btn-lg row mask" id="mask2">Click for a free consultation!</Link>
                 </div>
                 
             </article>
