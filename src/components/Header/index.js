@@ -5,7 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light navAdjust">
-        <Link className="navbar-brand" to="/">Navbar</Link>
+        <Link className="navbar-brand" to="/">State of Mind Canine</Link>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="w-100 navbar-nav d-flex justify-content-end">
               <Link className="nav-item nav-link active hoverBlue" to="/">Home</Link>

@@ -33,6 +33,7 @@ ul {
 
 .cardImg {
   width: 35vmin;
+  border-radius: 25px;
 }
 
 .navAdjust {
@@ -87,19 +88,21 @@ ul {
 #jumbotron {
   background-image: url('./assets/images/dogJumboFlipped.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+  background-attachment: fixed;
+  background-position: 40% 0%;
   height: 92vh;
 }
 
-#mask {
+.mask {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-#mask2 {
+.mask2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#mask2:hover {
+.mask2:hover {
   color: rgb(142, 142, 216);
   /* background-color: rgba(0, 0, 0, 0.5); */
   /* transition: background-color 200ms linear; */
@@ -138,6 +141,10 @@ ul {
   margin: 4% 20% 0% 20%;
   background-color: rgb(69, 69, 126);
   border: none;
+}
+
+.modalBtn:hover {
+  background-color: rgb(96, 96, 166);
 }
 
 .App {
@@ -241,7 +248,7 @@ margin:50px auto;
 font-family:Open Sans;
 font-style:italic;
 color: #555555;
-padding:1.2em 30px 1.2em 75px;
+padding:1.2em 30px 1.2em 45px;
 border-left:8px solid rgb(69, 69, 126);
 line-height:1.6;
 position: relative;
@@ -280,20 +287,94 @@ margin-top:1em;
 
 }
 
+.quoteImg {
+  width: 100%;
+}
+
+.contactFormBtn {
+  border-color:rgb(69, 69, 126, 0);
+  background-color:rgb(111, 111, 174);
+}
+.contactFormBtn:hover {
+  border-color:rgb(69, 69, 126, 0);
+  background-color:rgb(142, 142, 216);
+}
+
+.callBtn {
+  width: fit-content;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-color:rgb(69, 69, 126);
+  color:rgb(142, 142, 216);
+}
+
+.callBtn:hover {
+  border-color:rgb(97, 97, 167);
+  color:rgb(167, 167, 238);
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.mobileContactBox {
+  display: none;
+}
+
+#jumboBigscreen {
+  display: block;
+}
+
+#jumboSmallscreen {
+  display: none;
+  margin: 10%;
+}
+
+.contactBg {
+  background-color:rgb(142, 142, 216)
+}
+
+@media screen and (max-width: 760px) {
+  .cardBox {
+    min-width: 60%;
+  }
+}
 @media screen and (max-width: 650px) {
+  #jumbotron {
+    height: 60vh;
+  }
+  .otro-blockquote{
+    width: 90%;
+  }
   .quoteText {
     font-size: calc(1em);
   }
   #jumboHeader {
-    font-size: calc(1em);
+    font-size: calc(1.8em);
   }
   #jumboSubheader {
     font-size: calc(1em);
+  }
+  #jumboBigscreen {
+    display: none;
+  }
+  #jumboSmallscreen {
+    display: block;
+  }
+  .mobileContactBox {
+    display: block;
+    margin-top: 10%;
+  }
+  .cardImg {
+    min-width: 100%
+  }
+  .cardBox {
+    min-width: 60%;
   }
 }
 
 @media screen and (max-width: 422px) {
   .quoteText {
-    font-size: calc(.8em);
+    font-size: calc(.9em);
   }
 }

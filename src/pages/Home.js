@@ -8,6 +8,7 @@ import beagle from "../assets/images/beagle.jpg"
 import hank from "../assets/images/hank.jpg"
 
 import ContactForm from "../components/ContactForm/index.js"
+import ContactBtn from "../components/ContactBtn/index.js"
 
 
 const Home = () => {
@@ -20,24 +21,31 @@ const Home = () => {
     return (
         <div className="App">
             <header className="text-center bg-image" id="jumbotron">
-                <div className="mask w-100 h-100" id="mask">
+                <div className="mask w-100 h-100 mask">
                     <div className="d-flex justify-content-start align-items-center h-100">
-                        <div className="text-white container jumboTextbox">
+                        <div className="text-white container jumboTextbox" id="jumboBigscreen">
                             <h1 className="mb-3 text-start ms-4 px-4 row" id="jumboHeader">Transform the dog you have into the dog you want!</h1>
-                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader"><span className="grayscale">✔</span>Perfect Obedience</h4>
-                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader"><span className="grayscale">✔</span>No Jumping, Barking, Pulling</h4>
-                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader"><span className="grayscale">✔</span>Guaranteed Results</h4>
+                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader">Perfect Obedience</h4>
+                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader">No Jumping, Barking, Pulling</h4>
+                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader">Guaranteed Results</h4>
                             {/* <a className="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> */}
                             <div className="d-flex justify-content-start" id="jumboBtnBox">
-                                <Link to="/Contact" className="btn btn-outline-light btn-lg row mask" id="mask2">Free Consultation!</Link>
+                                <Link to="/Contact" className="btn btn-outline-light btn-lg row mask mask2">Free Consultation!</Link>
                             </div>
                         </div>
-                        <div className="contactBox w-100">
-                            <ContactForm />
+                        <div className="contactBox w-100" id="jumboBigscreen">
+                            <ContactForm/>
+                        </div>
+                        <div className="text-white container jumboTextbox w-100 align-self-start" id="jumboSmallscreen">
+                            <h1 className="text-start row text-center" id="jumboHeader">Transform the dog you have into the dog you want!</h1>
+                            <ContactBtn />
                         </div>
                     </div>
                 </div>
             </header>
+            <section className="mobileContactBox">
+                <ContactForm />
+            </section>
             <section className="endorsementBox d-flex justify-content-center">
                 <blockquote className="otro-blockquote quoteText">
                 "SSBR is very blessed to have an amazing trainer who truly cares about each dog as an individual.
@@ -80,8 +88,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="wideEndorsement row">   
-                    <img src={hank} alt="two children and their dog(hank)" className="rounded-lg"/>
+                <div className="wideEndorsement row d-flex align-items-center">   
+                    <img src={hank} alt="two children and their dog(hank)" className="rounded-lg quoteImg"/>
                     <blockquote className="otro-blockquote quoteText">
                     " . . . When we got hooked up with Alessandro he 
                      took Hank in for a few weeks and he is now a totally different dog. we've stuck with his training
@@ -110,7 +118,7 @@ const Home = () => {
                 </div>
                 
                 <div className="d-flex justify-content-center consultBtn">
-                    <Link to="/Contact" className="btn btn-outline-light btn-lg row mask" id="mask2">Click for a free consultation!</Link>
+                    <Link to="/Contact" className="btn btn-outline-light btn-lg row mask mask2">Click for a free consultation!</Link>
                 </div>
                 
             </article>

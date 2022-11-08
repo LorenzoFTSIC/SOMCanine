@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "server/server.js",
-  "homepage": "https://{lorenzoFTSIC}.github.io/{SOMCanine}",
+  "homepage": "https://lorenzoftsic.github.io/SOMCanine/",
   "devDependencies": {
     "concurrently": "^5.1.0",
     "gh-pages": "^4.0.0"

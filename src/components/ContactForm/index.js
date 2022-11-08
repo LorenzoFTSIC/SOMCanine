@@ -33,7 +33,7 @@ const ContactForm = () => {
             <div className="col-md-7 col-lg-5 px-lg-2 col-xl-7 px-xl-0 px-xxl-3">
             <form
                 method="POST"
-                className="w-100 rounded-1 p-4 border bg-white"
+                className="w-100 rounded-1 p-4 border bg-white shadow-lg"
                 action={FORM_ENDPOINT}
                 onSubmit={handleSubmit}
             >
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 </label>
 
                 <div className="mb-3">
-                <button type="submit" className="btn btn-primary px-3 rounded-3">
+                <button type="submit" className="btn btn-primary px-3 rounded-3 contactFormBtn">
                     Send
                 </button>
                 </div>
