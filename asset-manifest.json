@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SOMCanine/static/css/main.77e60a86.css",
-    "main.js": "/SOMCanine/static/js/main.863c9bc6.js",
+    "main.css": "/SOMCanine/static/css/main.7c82440c.css",
+    "main.js": "/SOMCanine/static/js/main.c608920e.js",
     "static/js/787.d01378f7.chunk.js": "/SOMCanine/static/js/787.d01378f7.chunk.js",
     "static/media/hank.jpg": "/SOMCanine/static/media/hank.7469bc932c352d666f28.jpg",
     "static/media/pitty.jpg": "/SOMCanine/static/media/pitty.ef691e8d947c479ec9d7.jpg",
@@ -10,12 +10,12 @@
     "static/media/beagle.jpg": "/SOMCanine/static/media/beagle.011de871bf8b8a87c5d5.jpg",
     "static/media/logo.svg": "/SOMCanine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SOMCanine/index.html",
-    "main.77e60a86.css.map": "/SOMCanine/static/css/main.77e60a86.css.map",
-    "main.863c9bc6.js.map": "/SOMCanine/static/js/main.863c9bc6.js.map",
+    "main.7c82440c.css.map": "/SOMCanine/static/css/main.7c82440c.css.map",
+    "main.c608920e.js.map": "/SOMCanine/static/js/main.c608920e.js.map",
     "787.d01378f7.chunk.js.map": "/SOMCanine/static/js/787.d01378f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77e60a86.css",
-    "static/js/main.863c9bc6.js"
+    "static/css/main.7c82440c.css",
+    "static/js/main.c608920e.js"
   ]
 }
