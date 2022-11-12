@@ -95,7 +95,16 @@ const Home = () => {
                 </div>
                 <div className="wideEndorsement row d-flex align-items-center">   
                     <img src={hank} alt="two children and their dog(hank)" className="rounded-lg quoteImg"/>
-                    <blockquote className="otro-blockquote quoteText">
+                    <blockquote className="otro-blockquote quoteText" id="bigQuoteBody">
+                    "When we got our rescue dog Hank, he was quite destructive. he did over $600 in damages to
+                     our house within the first week. he peed and pooped in the house every day and would run off 
+                     any chance hed get and even break out of his crate. when we got hooked up with Alessandro he 
+                     took Hank in for a few weeks and he is now a totally different dog. we've stuck with his training
+                      and still call him for suggestions if we need him. Hank has found his furever home because of
+                       Alessandro."     
+                    <span className="quoteAuthor">-Jenn Nero, Seffner Florida</span>
+                    </blockquote>
+                    <blockquote className="otro-blockquote quoteText" id="smallQuoteBody">
                     " . . . When we got hooked up with Alessandro he 
                      took Hank in for a few weeks and he is now a totally different dog. we've stuck with his training
                       and still call him for suggestions if we need him . . ."        
@@ -108,7 +117,7 @@ const Home = () => {
                         <Modal.Header closeButton>
                         <Modal.Title>Jenn Nero, Seffner Florida:</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body>"When we got our rescue dog Hank, he was quite destructive. he did over $600 in damages to
+                        <Modal.Body >"When we got our rescue dog Hank, he was quite destructive. he did over $600 in damages to
                      our house within the first week. he peed and pooped in the house every day and would run off 
                      any chance hed get and even break out of his crate. when we got hooked up with Alessandro he 
                      took Hank in for a few weeks and he is now a totally different dog. we've stuck with his training

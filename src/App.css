@@ -338,11 +338,29 @@ margin-top:1em;
   background-color:rgb(142, 142, 216)
 }
 
+#bigQuoteBody {
+  display: block;
+}
+
+#smallQuoteBody {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  #smallQuoteBody {
+    display: block;
+  }
+  #bigQuoteBody {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 760px) {
   .cardBox {
     min-width: 60%;
   }
 }
+
 @media screen and (max-width: 650px) {
   #jumbotron {
     height: 63vh;
