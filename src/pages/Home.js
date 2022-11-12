@@ -24,10 +24,15 @@ const Home = () => {
                 <div className="mask w-100 h-100 mask">
                     <div className="d-flex justify-content-start align-items-center h-100">
                         <div className="text-white container jumboTextbox" id="jumboBigscreen">
-                            <h1 className="mb-3 text-start ms-4 px-4 row" id="jumboHeader">Transform the dog you have into the dog you want!</h1>
-                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader">Perfect Obedience</h4>
-                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader">No Jumping, Barking, Pulling</h4>
-                            <h4 className="mb-3 text-start ms-4 px-4 row" id="jumboSubheader">Guaranteed Results</h4>
+                            <h1 className=" text-start row" id="jumboHeader">Transform the dog you have into the dog you want!</h1>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>No more pulling</h4>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>No more barking</h4>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Doesn't jump on guests</h4>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Doesn't run out the door</h4>
+                            <h4 className="text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Listens to commands(sit, stay, lay down, come)</h4>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Fixing behavior issues (anxiety, fear, aggression)</h4>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Fixing behavior issues (anxiety, fear, aggression)</h4>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Onleash obedience around distractions</h4>
                             {/* <a className="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> */}
                             <div className="d-flex justify-content-start" id="jumboBtnBox">
                                 <Link to="/Contact" className="btn btn-outline-light btn-lg row mask mask2">Free Consultation!</Link>
@@ -36,8 +41,8 @@ const Home = () => {
                         <div className="contactBox w-100" id="jumboBigscreen">
                             <ContactForm/>
                         </div>
-                        <div className="text-white container jumboTextbox w-100 align-self-start" id="jumboSmallscreen">
-                            <h1 className="text-start row text-center" id="jumboHeader">Transform the dog you have into the dog you want!</h1>
+                        <div className="text-white container jumboTextbox w-100 align-self-center container" id="jumboSmallscreen">
+                            <h1 className="text-start row text-center row" id="jumboHeader">Transform the dog you have into the dog you want!</h1>
                             <ContactBtn />
                         </div>
                     </div>

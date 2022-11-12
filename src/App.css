@@ -110,7 +110,7 @@ ul {
 }
 
 .jumboTextbox {
-  width: 45vw;
+  width: 60vw;
   margin-left: 10%;
   margin-right: 0%;
 }
@@ -120,7 +120,8 @@ ul {
 }
 
 #jumboSubheader {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  padding-bottom: 1%;
 }
 
 #jumboBtnBox {
@@ -302,18 +303,20 @@ margin-top:1em;
 
 .callBtn {
   width: fit-content;
-  padding-left: 7%;
-  padding-right: 7%;
+  margin-top: 6%;
+  padding-left: 2%;
+  padding-right: 2%;
   padding-top: 2%;
   padding-bottom: 2%;
   border-color:rgb(69, 69, 126);
   color:rgb(142, 142, 216);
+  background-color: rgb(65, 105, 225, .5)
 }
 
 .callBtn:hover {
   border-color:rgb(97, 97, 167);
   color:rgb(167, 167, 238);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(30, 28, 55, 0.6);
 
 }
 
@@ -328,6 +331,7 @@ margin-top:1em;
 #jumboSmallscreen {
   display: none;
   margin: 10%;
+  padding-bottom: 33%;
 }
 
 .contactBg {
@@ -341,29 +345,33 @@ margin-top:1em;
 }
 @media screen and (max-width: 650px) {
   #jumbotron {
-    height: 60vh;
+    height: 63vh;
   }
   .otro-blockquote{
     width: 90%;
   }
   .quoteText {
-    font-size: calc(1em);
+    font-size: 1em;
   }
   #jumboHeader {
-    font-size: calc(1.8em);
+    font-size: 2.1em;
+    margin-bottom: 25%;
+    padding-bottom: 0%;
+    /* margin-top: 3%; */
   }
   #jumboSubheader {
-    font-size: calc(1em);
+    font-size: 1em;
   }
   #jumboBigscreen {
     display: none;
   }
   #jumboSmallscreen {
     display: block;
+    margin-top: 5%;
   }
   .mobileContactBox {
     display: block;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .cardImg {
     min-width: 100%

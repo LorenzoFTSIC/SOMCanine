@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     <div className="container">
         <div className="row mx-0 justify-content-center">
-            <div className="col-md-7 col-lg-5 px-lg-2 col-xl-7 px-xl-0 px-xxl-3">
+            <div className="col-md-7 col-lg-7 px-lg-2 col-xl-7 px-xl-0 px-xxl-3">
             <form
                 method="POST"
                 className="w-100 rounded-1 p-4 border bg-white shadow-lg"
@@ -38,7 +38,7 @@ const ContactForm = () => {
                 onSubmit={handleSubmit}
             >
             <label className="d-block mb-4">
-                <span className="form-label d-block">Name</span>
+                <span className="form-label d-block text-start">Name</span>
                 <input
                 name="name"
                 type="text"
@@ -50,7 +50,7 @@ const ContactForm = () => {
                 />
             </label>
                 <label className="d-block mb-4">
-                    <span className="form-label d-block">Email address</span>
+                    <span className="form-label d-block text-start">Email address</span>
                     <input
                     name="email"
                     type="email"
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 </label>
 
                 <label className="d-block mb-4">
-                <span className="form-label d-block">Phone number</span>
+                <span className="form-label d-block text-start">Phone number</span>
                 <input
                     name="phone"
                     type="text"
@@ -72,7 +72,7 @@ const ContactForm = () => {
                 </label>
 
                 <label className="d-block mb-4">
-                <span className="form-label d-block">Message</span>
+                <span className="form-label d-block text-start">Message</span>
                 <textarea
                     name="message"
                     className="form-control"
