@@ -310,7 +310,7 @@ margin-top:1em;
   padding-bottom: 2%;
   border-color:rgb(69, 69, 126);
   color:rgb(142, 142, 216);
-  background-color: rgb(65, 105, 225, .5)
+  background-color: rgba(28, 28, 109, 0.7)
 }
 
 .callBtn:hover {
