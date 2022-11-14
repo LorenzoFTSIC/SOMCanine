@@ -21,9 +21,6 @@ ul {
   padding-bottom: 1%;
 }
 
-/* .programBox {
-  margin-bottom: 15%;
-} */
 
 .cardBox {
   width: 40vmin;
@@ -98,16 +95,6 @@ ul {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.mask2 {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.mask2:hover {
-  color: rgb(142, 142, 216);
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* transition: background-color 200ms linear; */
-  transition: color 400ms linear;
-}
 
 .jumboTextbox {
   width: 60vw;
@@ -128,9 +115,17 @@ ul {
  padding-left: 25%;
 }
 
-
 .consultBtn {
   margin-top: 4%;
+  border-color:rgb(69, 69, 126);
+  color:rgb(142, 142, 216);
+  background-color: rgba(28, 28, 109, 0.7)
+ }
+
+ .consultBtn:hover {
+  border-color:rgb(97, 97, 167);
+  color:rgb(199, 199, 252);
+  background-color: rgba(23, 18, 86, 0.9);
  }
 
 .dropdown-toggle::after {
@@ -140,12 +135,18 @@ ul {
 
 .modalBtn {
   margin: 4% 20% 0% 20%;
-  background-color: rgb(69, 69, 126);
+  /* background-color: rgb(69, 69, 126); */
+  border-color:rgb(69, 69, 126);
+  color:rgb(197, 197, 246);
+  background-color: rgb(39, 39, 202, .9);
   border: none;
 }
 
 .modalBtn:hover {
-  background-color: rgb(96, 96, 166);
+  /* background-color: rgb(96, 96, 166); */
+  border-color:rgb(97, 97, 167);
+  color:rgb(199, 199, 252);
+  background-color: rgba(23, 18, 86, 0.9);
 }
 
 .App {
@@ -154,9 +155,29 @@ ul {
   margin-bottom: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoBox {
+  max-width: 8vw;
+  min-width: 5vw;
+  width: 100%;
+}
+
+#logo {
+  width: 100%;
+  min-width: 100px;
+  /* width: min-content; */
+  background-image: "../../assets/images/logo.jpg"
+}
+
+.navbarItemWidth {
+  width: 25%;
+}
+
+.navbar-brand {
+  width: 12%;
+}
+
+.navbarLight {
+  background: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -188,15 +209,6 @@ ul {
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .blockquote {
@@ -292,13 +304,31 @@ margin-top:1em;
   width: 100%;
 }
 
+#whiteBgConsult {
+  border-color:rgb(69, 69, 126);
+  color:rgb(197, 197, 246);
+  background-color: rgb(39, 39, 202, .9)
+}
+
+#whiteBgConsult:hover {
+  border-color:rgb(97, 97, 167);
+  color:rgb(199, 199, 252);
+  background-color: rgba(23, 18, 86, 0.9);
+}
+
 .contactFormBtn {
-  border-color:rgb(69, 69, 126, 0);
-  background-color:rgb(111, 111, 174);
+  /* border-color:rgb(69, 69, 126, 0);
+  background-color:rgb(111, 111, 174); */
+  border-color:rgb(69, 69, 126);
+  color:rgb(197, 197, 246);
+  background-color: rgb(39, 39, 202, .9)
 }
 .contactFormBtn:hover {
-  border-color:rgb(69, 69, 126, 0);
-  background-color:rgb(142, 142, 216);
+  /* border-color:rgb(69, 69, 126, 0);
+  background-color:rgb(142, 142, 216); */
+  border-color:rgb(97, 97, 167);
+  color:rgb(199, 199, 252);
+  background-color: rgba(23, 18, 86, 0.9);
 }
 
 .callBtn {
@@ -346,6 +376,11 @@ margin-top:1em;
   display: none;
 }
 
+#logoText {
+  font-size: 1.5em;
+  margin: 0;
+}
+
 @media screen and (max-width: 990px) {
   #smallQuoteBody {
     display: block;
@@ -354,6 +389,12 @@ margin-top:1em;
     display: none;
   }
 }
+
+/* @media screen and (max-width: 770px) {
+  #logoText {
+    display: none;
+  }
+} */
 
 @media screen and (max-width: 760px) {
   .cardBox {
@@ -396,6 +437,12 @@ margin-top:1em;
   }
   .cardBox {
     min-width: 60%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #logoText {
+    display: none;
   }
 }
 

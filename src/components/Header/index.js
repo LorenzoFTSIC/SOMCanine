@@ -2,11 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 
+import logo from "../../assets/images/logo.jpg"
+
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-light navAdjust">
-        <Link className="navbar-brand" to="/">State of Mind Canine</Link>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <nav className="navbar navbar-expand-md navbar-light navAdjust">
+        
+        {/* <Link className="logo" to="/"></Link> */}
+        {/* <Link to="/">
+        </Link> */}
+        <Link className="navbar-brand logoBox" to="/">
+          <img src={logo} alt="state of mind canine logo" className="logo" id="logo"></img>
+        </Link>
+        <p id="logoText">State of Mind Canine</p>
+        <div className="collapse navbar-collapse" id="navbarItemWidth">
             <div className="w-100 navbar-nav d-flex justify-content-end">
               <Link className="nav-item nav-link active hoverBlue" to="/">Home</Link>
               <Link className="nav-item nav-link hoverBlue" to="/About">About Me</Link>

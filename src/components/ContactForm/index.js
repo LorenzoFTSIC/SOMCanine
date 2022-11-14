@@ -82,7 +82,7 @@ const ContactForm = () => {
                 </label>
 
                 <div className="mb-3">
-                <button type="submit" className="btn btn-primary px-3 rounded-3 contactFormBtn">
+                <button type="submit" className="btn px-3 rounded-3 contactFormBtn">
                     Send
                 </button>
                 </div>

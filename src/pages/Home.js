@@ -31,11 +31,11 @@ const Home = () => {
                             <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Doesn't run out the door</h4>
                             <h4 className="text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Listens to commands(sit, stay, lay down, come)</h4>
                             <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Fixing behavior issues (anxiety, fear, aggression)</h4>
-                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Fixing behavior issues (anxiety, fear, aggression)</h4>
                             <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Onleash obedience around distractions</h4>
+                            <h4 className=" text-start row" id="jumboSubheader"><span className="grayscale">✔</span>Offleash obedience around distractions</h4>
                             {/* <a className="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> */}
                             <div className="d-flex justify-content-start" id="jumboBtnBox">
-                                <Link to="/Contact" className="btn btn-outline-light btn-lg row mask mask2">Free Consultation!</Link>
+                                <Link to="/Contact" className="btn btn-outline-light btn-lg row mask consultBtn">Free Consultation!</Link>
                             </div>
                         </div>
                         <div className="contactBox w-100" id="jumboBigscreen">
@@ -61,7 +61,7 @@ const Home = () => {
             </section>
             <article className="container">
                 <div className="row">
-                    <div className="cardBox container shadow">
+                    <div className="cardBox container shadow col-xxl-4">
                         <div className="row d-flex justify-content-center">
                                 <img src={beagle} alt="puppy" className="rounded cardImg"/> 
                         </div>
@@ -71,7 +71,7 @@ const Home = () => {
                                 months focusing on preventing issues from coming up and teaching them basic obedience.</p>
                         </div>
                     </div>
-                    <div className="cardBox container shadow">
+                    <div className="cardBox container shadow col-xxl-4">
                         <div className="row d-flex justify-content-center">
                                 <img src={pitty} alt="happy pitbull" className="rounded cardImg"/> 
                         </div>
@@ -81,7 +81,7 @@ const Home = () => {
                             manners, and how to be calm in public.</p>
                         </div>
                     </div>
-                    <div className="cardBox container shadow">
+                    <div className="cardBox container shadow col-xxl-4">
                         <div className="row d-flex justify-content-center">
                                 <img src={whitedog} alt="small white dog in field" className="rounded cardImg"/> 
                         </div>
@@ -131,8 +131,8 @@ const Home = () => {
                     </Modal>
                 </div>
                 
-                <div className="d-flex justify-content-center consultBtn">
-                    <Link to="/Contact" className="btn btn-outline-light btn-lg row mask mask2">Click for a free consultation!</Link>
+                <div className="d-flex justify-content-center">
+                    <Link to="/Contact" className="btn btn-outline-light btn-lg row mask consultBtn" id="whiteBgConsult">FREE Consultation!</Link>
                 </div>
                 
             </article>
