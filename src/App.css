@@ -5,7 +5,12 @@ ul {
   margin: 0px;
 }
 
-.hoverBlue:hover {
+.navLinks {
+  font-size: 1.2em;
+
+}
+
+.navLinks:hover {
   color: rgb(142, 142, 216);
   transition: color 500ms ease-out;
 }
