@@ -37,6 +37,7 @@ const ContactForm = () => {
                 action={FORM_ENDPOINT}
                 onSubmit={handleSubmit}
             >
+            <h4>Schedule your FREE consultation TODAY</h4>
             <label className="d-block mb-4">
                 <span className="form-label d-block text-start">Name</span>
                 <input
@@ -83,7 +84,7 @@ const ContactForm = () => {
 
                 <div className="mb-3">
                 <button type="submit" className="btn px-3 rounded-3 contactFormBtn">
-                    Send
+                    Schedule Now
                 </button>
                 </div>
             </form>
