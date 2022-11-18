@@ -132,7 +132,7 @@ const Home = () => {
                 </div>
                 
                 <div className="d-flex justify-content-center">
-                    <Link to="/Contact" className="btn btn-outline-light btn-lg row mask consultBtn" id="whiteBgConsult">FREE Consultation!</Link>
+                    <Link to="/Contact" className="btn btn-outline-light btn-lg row mask consultBtn" id="whiteBgConsult">Free Consultation!</Link>
                 </div>
                 
             </article>

@@ -84,7 +84,7 @@ const ContactForm = () => {
 
                 <div className="mb-3">
                 <button type="submit" className="btn px-3 rounded-3 contactFormBtn">
-                    Schedule Now
+                    Schedule Now!
                 </button>
                 </div>
             </form>
