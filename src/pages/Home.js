@@ -1,25 +1,54 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+import Header from "../components/Header/index.js"
+import ContactForm from "../components/ContactForm/index.js"
+import ContactBtn from "../components/ContactBtn/index.js"
+
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+
 import pitty from "../assets/images/pitty.jpg"
 import whitedog from "../assets/images/whitedog.jpg"
 import beagle from "../assets/images/beagle.jpg"
 import hank from "../assets/images/hank.jpg"
 
-import ContactForm from "../components/ContactForm/index.js"
-import ContactBtn from "../components/ContactBtn/index.js"
 
 
-const Home = () => {
+const Home = () => {     
+    
+    useEffect(() => {
+        checkHome();
+    }, []);
+
+    const [isHome, setIsHome] = useState(true)
+    const handleHome = () => setIsHome(true)
+    const handleLanding = () => setIsHome(false)
+
+    const checkHome = () => {
+        if (location.pathname === "/landing") {
+            handleLanding()
+            console.log(isHome + " test")
+        } else {
+            handleHome()
+            console.log("not landing")
+        }
+        // console.log(isHome)
+    }
 
     const [show, setShow] = useState(false);
   
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+
+
+    const location = useLocation();
+    console.log(location.pathname)
+
     return (
         <div className="App">
+            {isHome && <Header /> }
             <header className="text-center bg-image" id="jumbotron">
                 <div className="mask w-100 h-100 mask">
                     <div className="d-flex justify-content-start align-items-center h-100">
